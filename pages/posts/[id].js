@@ -5,7 +5,9 @@ export async function getStaticPaths() {
   // return a list of possible value for id
   const paths = getAllPostIds()
   return {
-    paths,
+    paths, 
+    // paths = contains the array of known paths returned
+    // by `getAllPostIds() which include the params defined by [id].js
     fallback: false,
   }
 }
